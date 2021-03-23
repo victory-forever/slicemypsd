@@ -1,0 +1,3789 @@
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>SliceMyPsd</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Favicon -->
+		<link rel="icon" href="#" type="image/x-icon">
+	 	<link rel="shortcut icon" href="#" type="image/x-icon">	
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Fonts  -->	
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+		<!-- Slick Slider -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+		<!-- jquery-ui.css -->
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+<body id="dashboard-page" class="white-layout dashboard-pages">	
+<!-- /////////////// Header ////////////// -->
+	<header class="overflow-hidden">
+	    <div class="container height100">
+			<div class="row height100">
+				<div class="col-xs-12 height100">
+					<div class="dashboard-header">
+						<a href="/" class="logo">
+							<span class="logo__clicemy">
+								<span class="logo__clice">
+									<span>sl</span>
+									<i class="logo__red-triangle"></i>
+									<span>ce</span>
+								</span>
+								<span class="logo__my">
+									my
+								</span>
+							</span>
+							<span class="logo__psd">
+								.psd
+							</span>
+						</a>
+						<div class="dashboard-header__date">
+							<script language="javascript" type="text/javascript">
+								var d = new Date();		
+					
+								var month=new Array("January","February","March","April","May","June",
+								"July","August","September","October","November","December");
+					
+								document.write(month[d.getMonth()]+ " " + "<span>" +d.getDate()+ "</span>");
+					
+							</script>
+						</div>	
+						<div class="profile-top">
+							<i class="fas fa-bell pointer"></i>
+							<div class="profile-top_info">
+								<div class="profile-top_userpic">
+									<img class="img-responsive" src="img/userpic/userpic1-sm.png" alt="">
+								</div>
+								<div class="profile-top_name">
+									stephen
+								</div>
+								<i class="fas fa-caret-down"></i>
+							</div>
+										
+							<div class="dropdown-notification">
+								<div class="dropdown-notification__head">
+									<i class="fas fa-bell pointer"></i>
+									<div>
+										Notifications
+									</div>
+								</div>
+								<ul class="dropdown-notification__list">
+									<li class="dropdown-notification__item">
+										<div class="dropdown-notification__block dropdown-notification__info">
+											<div class="dropdown-notification__status">
+												Project finished
+											</div>
+											<div class="dropdown-notification__project-name">
+												Spaced
+											</div>
+										</div>
+										<div class="dropdown-notification__block dropdown-notification__date">
+											22/09/18
+										</div>
+									</li>
+									<li class="dropdown-notification__item">
+										<div class="dropdown-notification__block dropdown-notification__info">
+											<div class="dropdown-notification__status">
+												Status change - quality check
+											</div>
+											<div class="dropdown-notification__project-name">
+												Spaced
+											</div>
+										</div>
+										<div class="dropdown-notification__block dropdown-notification__date">
+											20/09/18
+										</div>
+									</li>
+									<li class="dropdown-notification__item">
+										<div class="dropdown-notification__block dropdown-notification__info">
+											<div class="dropdown-notification__status">
+												Project added
+											</div>
+											<div class="dropdown-notification__project-name">
+												Spaced
+											</div>
+										</div>
+										<div class="dropdown-notification__block dropdown-notification__date">
+											22/09/18
+										</div>
+									</li>
+								</ul>
+							</div>
+								
+							<div class="dropdown-profile">
+								<div class="dropdown-profile__head">
+									<div class="profile-top_name">
+										stephen
+									</div>
+									<i class="fas fa-caret-up pointer"></i>
+								</div>
+								<ul class="dropdown-profile__list">
+									<li class="dropdown-profile__item newproject-btn">
+										<a href="#">
+											<span>
+												New project
+											</span>
+											<i class="fas fa-plus-circle"></i>
+										</a>
+									</li>
+									<li class="dropdown-profile__item">
+										<a href="profile.html">
+											<span>
+												View profile
+											</span>
+											<i class="far fa-user"></i>
+										</a>
+									</li>
+									<li class="dropdown-profile__item">
+										<a href="dashboard_orders.html">
+											<span>
+												Orders
+											</span>
+											<i class="far fa-list-alt"></i>
+										</a>
+									</li>
+									<li class="dropdown-profile__item">
+										<a href="/" class="logout">
+											<span>
+												Logout
+											</span>
+											<i class="fas fa-power-off"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+<!-- /////////////// 2nd section Dashboard Heading ////////////// -->
+		<section id="dashboard-heading">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="dashboard-heading">
+							Active projects
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+<!-- /////////////// 3rd section Project Overview ////////////// -->
+		<section id="project-overview">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-2 col-sm-9 col-sm-push-3 col-xs-12">
+						<div class="dashboard-projects">
+							<div class="no-projects">
+								<div class="no-projects__start pointer" title="Start a new project">
+									<i class="fas fa-plus"></i>
+								</div>
+								<div class="no-projects__message">
+									No Active Project <br>Start a New Project
+								</div>
+							</div>
+							<div class="dashboard-projects__list dashboard-projects__list_slider">
+								<div>
+									<div class="dashboard-project">
+										<div class="dashboard-project__header">
+											<div class="project-type__color project-type__color_shopify"></div>
+											<div class="dashboard-project__info">
+												<div class="order-number">
+													Order #501
+												</div>
+												<div class="dashboard-project__actions">
+													<div class="dashboard-project__actions-button">
+														<span></span>
+														<span></span>
+														<span></span>
+													</div>
+													<ul class="dashboard-project__actions-list">
+														<li class="dashboard-project__action dashboard-project__action_open">
+															<a href="project.html">Open</a>
+														</li>
+														<li class="dashboard-project__action dashboard-project__action_copy">
+															Copy link
+														</li>
+														<li class="dashboard-project__action dashboard-project__action_download">
+															Download
+														</li>
+														<li class="dashboard-project__action dashboard-project__action_remove">
+															Remove
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="dashboard-project__name">
+											Spaced
+										</div>
+										<div class="project-status">
+											<ul class="project-status__timeline">
+												<li class="progress-step progress-step_1 in-progress">
+													<div class="progress-step__text">
+														<span id="step1-name" class="step-name">
+															Order confirmed
+														</span>
+														<span id="step1-date" class="step-date">
+															2018/09/14
+														</span>
+													</div>
+													<div class="progress-marker"></div>
+													<div id="progressbar11"></div>
+												</li>
+
+												<li class="progress-step progress-step_2 in-progress">
+													<div class="progress-step__text">
+														<span id="step2-name" class="step-name">
+															Processing project
+														</span>
+														<span id="step2-date" class="step-date">
+															2018/09/15
+														</span>
+													</div>
+													<div class="progress-marker"></div>
+													<div id="progressbar12"></div>
+												</li>
+
+												<li class="progress-step progress-step_3">
+													<div class="progress-step__text">
+														<span id="step3-name" class="step-name">
+															Quality check
+														</span>
+														<span id="step3-date" class="step-date">
+															TBD
+														</span>
+													</div>
+													<div class="progress-marker"></div>
+													<div id="progressbar13"></div>
+												</li>
+												
+												<li class="progress-step progress-step_4">
+													<div class="progress-step__text">
+														<span id="step3-name" class="step-name">
+															Project delivered
+														</span>
+														<span id="step3-date" class="step-date">
+															Expecting 2018/09/28
+														</span>
+													</div>
+													<div class="progress-marker"></div>
+												</li>
+											</ul>
+										</div>
+										<div class="delete-warning">
+											<div class="delete-warning__question">
+												Are you sure?
+											</div>
+											<div class="delete-warning__buttons">
+												<div class="delete-warning__button delete-warning__button_remove js-remove-project">
+													Yes, remove
+												</div>
+												<div class="delete-warning__button delete-warning__button_cancel">
+													Cancel
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>								
+
+								<div>
+									<div class="dashboard-project">
+										<div class="dashboard-project__header">
+											<div class="project-type__color project-type__color_frontend"></div>
+											<div class="dashboard-project__info">
+												<div class="order-number">
+													Order #502
+												</div>
+												<div class="dashboard-project__actions">
+													<div class="dashboard-project__actions-button">
+														<span></span>
+														<span></span>
+														<span></span>
+													</div>
+													<ul class="dashboard-project__actions-list">
+														<li class="dashboard-project__action dashboard-project__action_open">
+															<a href="project.html">Open</a>
+														</li>
+														<li class="dashboard-project__action dashboard-project__action_copy">
+															Copy link
+														</li>
+														<li class="dashboard-project__action dashboard-project__action_download">
+															Download
+														</li>
+														<li class="dashboard-project__action dashboard-project__action_remove">
+															Remove
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="dashboard-project__name">
+											Burst
+										</div>
+										<div class="project-status">
+											<ul class="project-status__timeline">
+												<li class="progress-step progress-step_1 in-progress">
+													<div class="progress-step__text">
+														<span id="step1-name" class="step-name">
+															Order confirmed
+														</span>
+														<span id="step1-date" class="step-date">
+															2018/09/14
+														</span>
+													</div>
+													<div class="progress-marker"></div>
+													<div id="progressbar21"></div>
+												</li>
+
+												<li class="progress-step progress-step_2">
+													<div class="progress-step__text">
+														<span id="step2-name" class="step-name">
+															Processing project
+														</span>
+														<span id="step2-date" class="step-date">
+															2018/09/15
+														</span>
+													</div>
+													<div class="progress-marker"></div>
+													<div id="progressbar22"></div>
+												</li>
+
+												<li class="progress-step progress-step_3">
+													<div class="progress-step__text">
+														<span id="step3-name" class="step-name">
+															Quality check
+														</span>
+														<span id="step3-date" class="step-date">
+															TBD
+														</span>
+													</div>
+													<div class="progress-marker"></div>
+													<div id="progressbar23"></div>
+												</li>
+												
+												<li class="progress-step progress-step_4">
+													<div class="progress-step__text">
+														<span id="step3-name" class="step-name">
+															Project delivered
+														</span>
+														<span id="step3-date" class="step-date">
+															Expecting 2018/09/28
+														</span>
+													</div>
+													<div class="progress-marker"></div>
+												</li>
+											</ul>
+										</div>
+										<div class="delete-warning">
+											<div class="delete-warning__question">
+												Are you sure?
+											</div>
+											<div class="delete-warning__buttons">
+												<div class="delete-warning__button delete-warning__button_remove js-remove-project">
+													Yes, remove
+												</div>
+												<div class="delete-warning__button delete-warning__button_cancel">
+													Cancel
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="dashboard-project">
+										<div class="dashboard-project__header">
+											<div class="project-type__color project-type__color_shopify"></div>
+											<div class="dashboard-project__info">
+												<div class="order-number">
+													Order #501
+												</div>
+												<div class="dashboard-project__actions">
+													<div class="dashboard-project__actions-button">
+														<span></span>
+														<span></span>
+														<span></span>
+													</div>
+													<ul class="dashboard-project__actions-list">
+														<li class="dashboard-project__action dashboard-project__action_open">
+															<a href="project.html">Open</a>
+														</li>
+														<li class="dashboard-project__action dashboard-project__action_copy">
+															Copy link
+														</li>
+														<li class="dashboard-project__action dashboard-project__action_download">
+															Download
+														</li>
+														<li class="dashboard-project__action dashboard-project__action_remove">
+															Remove
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="dashboard-project__name">
+											Spaced
+										</div>
+										<div class="project-status">
+											<ul class="project-status__timeline">
+												<li class="progress-step progress-step_1 in-progress">
+													<div class="progress-step__text">
+														<span id="step1-name" class="step-name">
+															Order confirmed
+														</span>
+														<span id="step1-date" class="step-date">
+															2018/09/14
+														</span>
+													</div>
+													<div class="progress-marker"></div>
+													<div id="progressbar31"></div>
+												</li>
+
+												<li class="progress-step progress-step_2 in-progress">
+													<div class="progress-step__text">
+														<span id="step2-name" class="step-name">
+															Processing project
+														</span>
+														<span id="step2-date" class="step-date">
+															2018/09/15
+														</span>
+													</div>
+													<div class="progress-marker"></div>
+													<div id="progressbar32"></div>
+												</li>
+
+												<li class="progress-step progress-step_3">
+													<div class="progress-step__text">
+														<span id="step3-name" class="step-name">
+															Quality check
+														</span>
+														<span id="step3-date" class="step-date">
+															TBD
+														</span>
+													</div>
+													<div class="progress-marker"></div>
+													<div id="progressbar33"></div>
+												</li>
+												
+												<li class="progress-step progress-step_4">
+													<div class="progress-step__text">
+														<span id="step3-name" class="step-name">
+															Project delivered
+														</span>
+														<span id="step3-date" class="step-date">
+															Expecting 2018/09/28
+														</span>
+													</div>
+													<div class="progress-marker"></div>
+												</li>
+											</ul>
+										</div>
+										<div class="delete-warning">
+											<div class="delete-warning__question">
+												Are you sure?
+											</div>
+											<div class="delete-warning__buttons">
+												<div class="delete-warning__button delete-warning__button_remove js-remove-project">
+													Yes, remove
+												</div>
+												<div class="delete-warning__button delete-warning__button_cancel">
+													Cancel
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-md-pull-8 col-sm-3 col-sm-pull-9 col-xs-12">
+						<div class="project-types">
+							<div class="project-types__title">
+								Project types:
+							</div>
+							<ul class="project-types__list">
+								<li class="project-type project-type_frontend">
+									<div class="project-type__color project-type__color_frontend"></div>
+									<div class="project-type__name project-type__name_frontend">
+										Front-end
+									</div>
+								</li>
+								<li class="project-type project-type_wordpress">
+									<div class="project-type__color project-type__color_wordpress"></div>
+									<div class="project-type__name project-type__name_wordpress">
+										Wordpress
+									</div>
+								</li>
+								<li class="project-type project-type_woocommerce">
+									<div class="project-type__color project-type__color_woocommerce"></div>
+									<div class="project-type__name project-type__name_woocommerce">
+										Woocommerce
+									</div>
+								</li>
+								<li class="project-type project-type_shopify">
+									<div class="project-type__color project-type__color_shopify"></div>
+									<div class="project-type__name project-type__name_shopify">
+										Shopify
+									</div>
+								</li>
+								<li class="project-type project-type_joomla">
+									<div class="project-type__color project-type__color_joomla"></div>
+									<div class="project-type__name project-type__name_joomla">
+										Joomla
+									</div>
+								</li>
+								<li class="project-type project-type_magento">
+									<div class="project-type__color project-type__color_magento"></div>
+									<div class="project-type__name project-type__name_magento">
+										Magento
+									</div>
+								</li>
+								<li class="project-type project-type_email">
+									<div class="project-type__color project-type__color_email"></div>
+									<div class="project-type__name project-type__name_email">
+										Email template
+									</div>
+								</li>
+								<li class="project-type project-type_spa">
+									<div class="project-type__color project-type__color_spa"></div>
+									<div class="project-type__name project-type__name_spa">
+										Single page app
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+<!-- /////////////// 4th section Ongoing-Projects ////////////// -->
+		<section id="ongoing-projects">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="dashboard-projects">
+							<div class="dashboard-projects__header">
+								<div class="dashboard-projects__name">
+									On-going
+								</div>
+								<div class="dashboard-projects__search">
+									<form action="#" method="post" class="projects-search-form">
+										<input type="search" name="ongoing-projects-search" value="" placeholder="Search by Name" class="projects-search-input">
+										<input type="submit" name="submit" value="" class="projects-search-btn">
+										<i class="fas fa-search"></i>
+									</form>
+								</div>
+							</div>
+							<ul class="dashboard-projects__list dashboard-projects__list_list">
+								<li class="dashboard-project dashboard-project_email">
+									<div class="dashboard-project__header">
+										<div class="project-type__color project-type__color_email"></div>
+										<div class="dashboard-project__info">
+											<div class="order-number">
+												Order #532
+											</div>
+											<div class="dashboard-project__actions">
+												<div class="dashboard-project__actions-button">
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+												<ul class="dashboard-project__actions-list">
+													<li class="dashboard-project__action dashboard-project__action_open">
+														<a href="project.html">Open</a>
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_copy">
+														Copy link
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_download">
+														Download
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_remove">
+														Remove
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="dashboard-project__name">
+										SpaceX
+									</div>
+									<div class="dashboard-project__date">
+										13.02.2018
+									</div>
+									<div class="delete-warning">
+										<div class="delete-warning__question">
+											Are you sure?
+										</div>
+										<div class="delete-warning__buttons">
+											<div class="delete-warning__button delete-warning__button_remove">
+												Yes, remove
+											</div>
+											<div class="delete-warning__button delete-warning__button_cancel">
+												Cancel
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li class="dashboard-project dashboard-project_wordpress">
+									<div class="dashboard-project__header">
+										<div class="project-type__color project-type__color_wordpress"></div>
+										<div class="dashboard-project__info">
+											<div class="order-number">
+												Order #533
+											</div>
+											<div class="dashboard-project__actions">
+												<div class="dashboard-project__actions-button">
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+												<ul class="dashboard-project__actions-list">
+													<li class="dashboard-project__action dashboard-project__action_open">
+														<a href="project.html">Open</a>
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_copy">
+														Copy link
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_download">
+														Download
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_remove">
+														Remove
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="dashboard-project__name">
+										WPlanet
+									</div>
+									<div class="dashboard-project__date">
+										15.02.2018
+									</div>
+									<div class="delete-warning">
+										<div class="delete-warning__question">
+											Are you sure?
+										</div>
+										<div class="delete-warning__buttons">
+											<div class="delete-warning__button delete-warning__button_remove">
+												Yes, remove
+											</div>
+											<div class="delete-warning__button delete-warning__button_cancel">
+												Cancel
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li class="dashboard-project dashboard-project_shopify">
+									<div class="dashboard-project__header">
+										<div class="project-type__color project-type__color_shopify"></div>
+										<div class="dashboard-project__info">
+											<div class="order-number">
+												Order #534
+											</div>
+											<div class="dashboard-project__actions">
+												<div class="dashboard-project__actions-button">
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+												<ul class="dashboard-project__actions-list">
+													<li class="dashboard-project__action dashboard-project__action_open">
+														<a href="project.html">Open</a>
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_copy">
+														Copy link
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_download">
+														Download
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_remove">
+														Remove
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="dashboard-project__name">
+										Shopeen
+									</div>
+									<div class="dashboard-project__date">
+										20.02.2018
+									</div>
+									<div class="delete-warning">
+										<div class="delete-warning__question">
+											Are you sure?
+										</div>
+										<div class="delete-warning__buttons">
+											<div class="delete-warning__button delete-warning__button_remove">
+												Yes, remove
+											</div>
+											<div class="delete-warning__button delete-warning__button_cancel">
+												Cancel
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+<!-- /////////////// 5th section Archive Projects ////////////// -->
+		<section id="archive-projects">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="dashboard-projects">
+							<div class="dashboard-projects__header">
+								<div class="dashboard-projects__name">
+									Archive
+								</div>
+								<div class="dashboard-projects__search">
+									<form action="#" method="post" class="projects-search-form">
+										<input type="search" name="archive-projects-search" value="" placeholder="Search by Name" class="projects-search-input">
+										<input type="submit" name="submit" value="" class="projects-search-btn">
+										<i class="fas fa-search"></i>
+									</form>
+								</div>
+							</div>
+							<ul class="dashboard-projects__list dashboard-projects__list_list">
+								<li class="dashboard-project dashboard-project_wordpress">
+									<div class="dashboard-project__header">
+										<div class="project-type__color project-type__color_wordpress"></div>
+										<div class="dashboard-project__info">
+											<div class="order-number">
+												Order #511
+											</div>
+											<div class="dashboard-project__actions">
+												<div class="dashboard-project__actions-button">
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+												<ul class="dashboard-project__actions-list">
+													<li class="dashboard-project__action dashboard-project__action_open">
+														<a href="project.html">Open</a>
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_copy">
+														Copy link
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_download">
+														Download
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_remove">
+														Remove
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="dashboard-project__name">
+										Apprendre
+									</div>
+									<div class="dashboard-project__date">
+										Finished <span>/ 01.08.2018</span>
+									</div>
+									<div class="delete-warning">
+										<div class="delete-warning__question">
+											Are you sure?
+										</div>
+										<div class="delete-warning__buttons">
+											<div class="delete-warning__button delete-warning__button_remove">
+												Yes, remove
+											</div>
+											<div class="delete-warning__button delete-warning__button_cancel">
+												Cancel
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li class="dashboard-project dashboard-project_woocommerce">
+									<div class="dashboard-project__header">
+										<div class="project-type__color project-type__color_woocommerce"></div>
+										<div class="dashboard-project__info">
+											<div class="order-number">
+												Order #521
+											</div>
+											<div class="dashboard-project__actions">
+												<div class="dashboard-project__actions-button">
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+												<ul class="dashboard-project__actions-list">
+													<li class="dashboard-project__action dashboard-project__action_open">
+														<a href="project.html">Open</a>
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_copy">
+														Copy link
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_download">
+														Download
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_remove">
+														Remove
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="dashboard-project__name">
+										Eggsperci
+									</div>
+									<div class="dashboard-project__date">
+										Finished <span>/ 11.07.2018</span>
+									</div>
+									<div class="delete-warning">
+										<div class="delete-warning__question">
+											Are you sure?
+										</div>
+										<div class="delete-warning__buttons">
+											<div class="delete-warning__button delete-warning__button_remove">
+												Yes, remove
+											</div>
+											<div class="delete-warning__button delete-warning__button_cancel">
+												Cancel
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li class="dashboard-project dashboard-project_spa">
+									<div class="dashboard-project__header">
+										<div class="project-type__color project-type__color_spa"></div>
+										<div class="dashboard-project__info">
+											<div class="order-number">
+												Order #531
+											</div>
+											<div class="dashboard-project__actions">
+												<div class="dashboard-project__actions-button">
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+												<ul class="dashboard-project__actions-list">
+													<li class="dashboard-project__action dashboard-project__action_open">
+														<a href="project.html">Open</a>
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_copy">
+														Copy link
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_download">
+														Download
+													</li>
+													<li class="dashboard-project__action dashboard-project__action_remove">
+														Remove
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="dashboard-project__name">
+										Sportspace
+									</div>
+									<div class="dashboard-project__date">
+										Finished <span>/ 21.06.2018</span>
+									</div>
+									<div class="delete-warning">
+										<div class="delete-warning__question">
+											Are you sure?
+										</div>
+										<div class="delete-warning__buttons">
+											<div class="delete-warning__button delete-warning__button_remove">
+												Yes, remove
+											</div>
+											<div class="delete-warning__button delete-warning__button_cancel">
+												Cancel
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>	
+	
+
+
+<!-- /////////////// FOOTER /////////////// -->	
+	<!-- Notification Overlay -->
+	<div class="notification_overlay"></div>
+	<!-- File Ready Notification -->
+	<div class="fileready-overlay">
+		<div class="fileready-notification">
+			<i class="fileready-ico"></i>
+			<div class="fileready-text">
+				Your file is ready!
+			</div>
+			<div class="fileready-btn">
+				<i class="download-ico"></i>
+				<a href="#">Download</a>				
+			</div>
+		</div>
+	</div>
+	<!-- Copy Link Notification -->
+	<div class="copy-link-notification">
+		<div class="copy-link-notification__wrap relative">
+			<span class="notification-project-name">SpaceX</span> project link has been copied to your clipboard.
+			<div id="close">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+	</div>
+	<!-- Download Project Notification -->
+	<div class="download-notification">
+		<div class="download-notification__wrap relative">
+			Project <span class="notification-project-name">SpaceX</span> will start downloading automatically.
+			<div id="close">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+	</div>
+	<!-- Remove Project Notification -->
+	<div class="remove-notification">
+		<div class="remove-notification__wrap relative">
+			Project <span class="notification-project-name">SpaceX</span> has been <br>removed successfully.
+			<div id="close">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Leave Feedback Window -->
+	<div class="leave-feedback">
+		<div class="leave-feedback__overlay"></div>
+		<div class="leave-feedback__window relative">	
+			<form action="#" id="popupResult-leave-feedback" class="leave-feedback__form sad-feedback">
+				<i class="leave-feedback__ico"></i>
+				<h4 class="leave-feedback__title">
+					Leave a feedback
+				</h4>
+				<div class="leave-feedback__subtitle relative">
+					<div class="leave-feedback__subtitle-sad">
+						We're really sorry. Tell us what went wrong
+					</div>
+					<div class="leave-feedback__subtitle-happy absolute">
+						Tell us what we got right
+					</div>
+				</div>
+				<div class="leave-feedback__change">
+					<input type="checkbox" name="feedback-status" id="feedback-status" value="happy" checked="">
+					<label for="feedback-status">				
+						<span class="leave-feedback__change-text">
+							Change my answer
+						</span>
+						<span class="leave-feedback__change-ico"></span>
+					</label>
+				</div>
+				<ul class="leave-feedback__reasons">
+					<li class="leave-feedback__reason">
+						<input type="checkbox" name="CustomerService" id="reason-customer-service" checked="">
+						<label for="reason-customer-service">
+							<span class="leave-feedback__reason-checkbox"></span>
+							<span class="leave-feedback__reason-name">
+								Customer Service
+							</span>
+						</label>
+					</li>			
+	
+					<li class="leave-feedback__reason">
+						<input type="checkbox" name="quality" id="reason-quality">
+						<label for="reason-quality">
+							<span class="leave-feedback__reason-checkbox"></span>
+							<span class="leave-feedback__reason-name">
+								Quality
+							</span>
+						</label>
+					</li>
+	
+					<li class="leave-feedback__reason">
+						<input type="checkbox" name="unreasonablePrice" id="reason-unreasonable-price">
+						<label for="reason-unreasonable-price">
+							<span class="leave-feedback__reason-checkbox"></span>
+							<span class="leave-feedback__reason-name">
+								Unreasonable Price
+							</span>
+						</label>
+					</li>
+	
+					<li class="leave-feedback__reason">
+						<input type="checkbox" name="deliveryTime" id="reason-delivery-time">
+						<label for="reason-delivery-time">
+							<span class="leave-feedback__reason-checkbox"></span>
+							<span class="leave-feedback__reason-name">
+								Delivery Time
+							</span>
+						</label>
+					</li>
+	
+					<li class="leave-feedback__reason">
+						<input type="checkbox" name="other" id="reason-other">
+						<label for="reason-other">
+							<span class="leave-feedback__reason-checkbox"></span>
+							<span class="leave-feedback__reason-name">
+								Other
+							</span>
+						</label>
+						<div class="leave-feedback__new-reason relative">
+							<input type="text" name="newReason" placeholder="Suggest your reason..." class="new-reason-input">
+							<span class="new-reason-ico absolute">
+								<i></i>
+							</span>
+						</div>
+					</li>
+				</ul>
+				<textarea class="leave-feedback__textarea" name="leaveFeedback" placeholder="What went wrong? How can we do better?"></textarea>
+				<div class="leave-feedback__reply">
+					<input type="checkbox" name="allow-reply" id="feedback-reply" value="yes" checked="">
+					<label for="feedback-reply" class="feedback-reply-label">
+						<span class="feedback-reply-checkbox"></span>
+						<span class="feedback-reply-text">
+							<span>
+								Allow us to reply
+							</span>
+							<span>
+								Your email will not be revealed
+							</span>
+						</span>
+					</label>
+				</div>
+				<input class="leave-feedback__button" type="submit" name="leavefeedback" value="submit" data-submit="">
+			</form>
+			<div id="close">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+	
+		<!-- Confirmation Leave Feedback -->	
+		<div class="leave-feedback__confirmation relative">
+			<div class="leave-feedback__confirmation-wrap">
+				<i class="check-ico-blue"></i>
+				<div class="">
+					Thank you!
+				</div>
+				<div class="">
+					You feedback is very appreciated
+				</div>			
+			</div>
+			<div id="close">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+	</div>
+	<!-- New Project - List -->
+	<div id="newproject-overlay">
+		<div class="newproject">
+			<h4 class="newproject__heading">
+				New project
+			</h4>
+			<div class="newproject__list">
+				<div class="services-item services-item_html">
+					<div class="services-item__heading">
+						<i class="service__icon icon-html"></i>
+						<h3>
+							Psd to html
+						</h3>
+					</div>
+					<div class="pricing">
+						<div class="pricing__delivery pricing__delivery_standard">
+							<div class="pricing__head">
+								<span>Standard</span> Delivery
+							</div>
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									First Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>69188 
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>33888
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									+ Inner Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>33888
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>19768
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+									
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>26828
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="pricing__delivery pricing__delivery_express">
+							<div class="pricing__head">
+								<span>Express</span> Delivery
+							</div>
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									First Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>97428
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>69188
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									+ Inner Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>26828
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+									
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>33888
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="services-item__bottom">
+						<div id="js-additional-html" class="services-item__additional">
+							Additional options 
+							<i class="fas fa-arrow-right"></i>
+						</div>
+						<div id="order-html-btn" class="button services-item__button">
+							Start a project
+						</div>
+					</div>
+				</div>
+	
+				<div class="services-item services-item_wordpress">
+					<div class="services-item__heading">
+						<i class="service__icon icon-wordpress"></i>
+						<h3>
+							Psd to wordpress
+						</h3>						
+					</div>
+					<div class="pricing">
+						<div class="pricing__delivery pricing__delivery_standard">
+							<div class="pricing__head">
+								<span>Standard</span> Delivery
+							</div>
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									First Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>97428 
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>69188
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									+ Inner Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>33888
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>19768
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+									
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>26828
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__integration">
+								<div class="integration-name">
+									<span>+</span> <span>Wordress Integration</span>  
+								</div>
+								<div class="integration-price">
+									<span>₦</span>111548
+								</div>
+							</div>
+						</div>
+						<div class="pricing__delivery pricing__delivery_express">
+							<div class="pricing__head">
+								<span>Express</span> Delivery
+							</div>
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									First Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>97428
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>69188
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									+ Inner Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>26828
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+									
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>33888
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__integration">
+								<div class="integration-name integration-name_hidden">
+									<span>+</span> <span>Wordress Integration</span>  
+								</div>
+								<div class="integration-price">
+									<span>₦</span>146848
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services-item__bottom">
+						<div id="js-additional-wordpress" class="services-item__additional">
+							Additional options 
+							<i class="fas fa-arrow-right"></i>
+						</div>
+						<div id="order-wordpress-btn" class="button services-item__button">
+							Start a project
+						</div>
+					</div>
+				</div>
+	
+				<div class="services-item services-item_shopify">
+					<div class="services-item__heading">
+						<i class="service__icon icon-shopify"></i>
+						<h3>
+							Psd to shopify
+						</h3>
+					</div>
+					<div class="pricing">
+						<div class="pricing__delivery pricing__delivery_standard">
+							<div class="pricing__head">
+								<span>Standard</span> Delivery
+							</div>
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									First Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>97428
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>69188
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									+ Inner Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>33888
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>19768
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+									
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>26828
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="pricing__integration">
+								<div class="integration-name">
+									<span>+</span> <span>Shopify Integration</span>  
+								</div>
+								<div class="integration-price">
+									<span>₦</span>190620
+								</div>
+							</div>
+						</div>
+						<div class="pricing__delivery pricing__delivery_express">
+							<div class="pricing__head">
+								<span>Express</span> Delivery
+							</div>
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									First Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>97428
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>69188
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									+ Inner Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>26828
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+									
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>33888
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__integration">
+								<div class="integration-name integration-name_hidden">
+									<span>+</span> <span>Shopify Integration</span>  
+								</div>
+								<div class="integration-price">
+									<span>₦</span>146848
+								</div>
+							</div>
+						</div>									
+					</div>
+					<div class="services-item__bottom">
+						<div id="js-additional-shopify" class="services-item__additional">
+							Additional options 
+							<i class="fas fa-arrow-right"></i>
+						</div>
+						<div id="order-shopify-btn" class="button services-item__button">
+							Start a project
+						</div>
+					</div>
+				</div>
+	
+				<div class="services-item services-item_joomla">
+					<div class="services-item__heading">
+						<i class="service__icon icon-joomla"></i>
+						<h3>
+							Psd to joomla
+						</h3>
+					</div>
+					<div class="pricing">
+						<div class="pricing__delivery pricing__delivery_standard">
+							<div class="pricing__head">
+								<span>Standard</span> Delivery
+							</div>
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									First Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>97428 
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>69188
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									+ Inner Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>33888
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>19768
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+									
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>26828
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__integration">
+								<div class="integration-name">
+									<span>+</span> <span>Joomla Integration</span>  
+								</div>
+								<div class="integration-price">
+									<span>₦</span>190620
+								</div>
+							</div>
+						</div>
+						<div class="pricing__delivery pricing__delivery_express">
+							<div class="pricing__head">
+								<span>Express</span> Delivery
+							</div>
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									First Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>97428
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>69188
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									+ Inner Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>26828
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+									
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>33888
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__integration">
+								<div class="integration-name integration-name_hidden">
+									<span>+</span> <span>Joomla Integration</span>  
+								</div>
+								<div class="integration-price">
+									<span>₦</span>240040
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services-item__bottom">
+						<div id="js-additional-joomla" class="services-item__additional">
+							Additional options 
+							<i class="fas fa-arrow-right"></i>
+						</div>
+						<div id="order-joomla-btn" class="button services-item__button">
+							Start a project
+						</div>
+					</div>
+				</div>
+	
+				<div class="services-item services-item_magento">
+					<div class="services-item__heading">
+						<i class="service__icon icon-magento"></i>
+						<h3>
+							Psd to magento
+						</h3>
+					</div>
+					<div class="pricing">
+						<div class="pricing__delivery pricing__delivery_standard">
+							<div class="pricing__head">
+								<span>Standard</span> Delivery
+							</div>
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									First Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>97428
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>69188
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									+ Inner Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>33888
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>19768
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+									
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>26828
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="pricing__integration">
+								<div class="integration-name">
+									<span>+</span> <span>Magento Integration</span>  
+								</div>
+								<div class="integration-price">
+									<span>₦</span>190620
+								</div>
+							</div>
+						</div>
+						<div class="pricing__delivery pricing__delivery_express">
+							<div class="pricing__head">
+								<span>Express</span> Delivery
+							</div>
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									First Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>97428
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>69188
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									+ Inner Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>26828
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+									
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>33888
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__integration">
+								<div class="integration-name integration-name_hidden">
+									<span>+</span> <span>Magento Integration</span>  
+								</div>
+								<div class="integration-price">
+									<span>₦</span>240040
+								</div>
+							</div>
+						</div>									
+					</div>
+					<div class="services-item__bottom">
+						<div id="js-additional-magento" class="services-item__additional">
+							Additional options 
+							<i class="fas fa-arrow-right"></i>
+						</div>
+						<div id="order-magento-btn"  class="button services-item__button">
+							Start a project
+						</div>
+					</div>
+				</div>
+	
+				<div class="services-item services-item_woocommerce">
+					<div class="services-item__heading">
+						<i class="service__icon icon-woocommerce"></i>
+						<h3>
+							Psd to woocommerce
+						</h3>
+					</div>
+					<div class="pricing">
+						<div class="pricing__delivery pricing__delivery_standard">
+							<div class="pricing__head">
+								<span>Standard</span> Delivery
+							</div>
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									First Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>97428 
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>69188
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									+ Inner Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>33888
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>19768
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+									
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>26828
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__integration">
+								<div class="integration-name">
+									<span>+</span> <span>Drupal Integration</span>  
+								</div>
+								<div class="integration-price">
+									<span>₦</span>190620
+								</div>
+							</div>
+						</div>
+						<div class="pricing__delivery pricing__delivery_express">
+							<div class="pricing__head">
+								<span>Express</span> Delivery
+							</div>
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									First Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>97428
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>69188
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__wrap">
+								<div class="pricing__page">
+									+ Inner Page
+								</div>
+								<ul class="prices">
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>48008
+										</span>
+										<span class="block device">
+											Desktop
+										</span>
+									</li>
+	
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>26828
+										</span>
+										<span class="block device">
+											Tablet
+										</span>
+									</li>
+									
+									<li class="prices__item">
+										<span class="block price">
+											<span>₦</span>33888
+										</span>
+										<span class="block device">
+											Mobile
+										</span>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="pricing__integration">
+								<div class="integration-name integration-name_hidden">
+									<span>+</span> <span>Drupal Integration</span>  
+								</div>
+								<div class="integration-price">
+									<span>₦</span>240040
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services-item__bottom">
+						<div id="js-additional-woocommerce" class="services-item__additional">
+							Additional options 
+							<i class="fas fa-arrow-right"></i>
+						</div>
+						<div id="order-woocommerce-btn" class="button services-item__button">
+							Start a project
+						</div>
+					</div>
+				</div>
+	
+				<div class="services-item services-item_email">
+					<div class="services-item__heading">
+						<i class="service__icon icon-email"></i>
+						<h3>
+							Email Template Coding
+						</h3>
+					</div>
+					<div class="pricing">
+						<div class="pricing__delivery pricing__delivery_standard">
+							<div class="pricing__head">
+								<span>Standard</span> Delivery
+							</div>
+							<div class="pricing__service-wrap">
+								<div class="pricing__service-name">
+									Design
+								</div>		
+								<span class="block price">
+									<span>₦</span>35000
+								</span>
+							</div>
+							<div class="pricing__service-wrap">
+								<div class="pricing__service-name">
+									Coding
+								</div>		
+								<span class="block price">
+									<span>₦</span>50000
+								</span>
+							</div>
+							<div class="pricing__service-wrap">
+								<div class="pricing__service-name">
+									<span>+</span> Responsive
+								</div>		
+								<span class="block price">
+									<span>₦</span>25000
+								</span>
+							</div>
+							<div class="pricing__integration">
+								<div class="integration-name">
+									<span>+</span> <span>Sofrware Integration</span>  
+								</div>
+								<div class="integration-price">
+									<span>₦</span>20000
+								</div>
+							</div>
+						</div>
+						<div class="pricing__delivery pricing__delivery_express">
+							<div class="pricing__head">
+								<span>Express</span> Delivery
+							</div>
+							<div class="pricing__service-wrap">
+								<div class="pricing__service-name pricing__service-name_hidden">
+									Design
+								</div>
+								<span class="block price">
+									<span>₦</span>50000
+								</span>
+							</div>
+							<div class="pricing__service-wrap">
+								<div class="pricing__service-name pricing__service-name_hidden">
+									Coding
+								</div>
+								<span class="block price">
+									<span>₦</span>70000
+								</span>
+							</div>
+							<div class="pricing__service-wrap">
+								<div class="pricing__service-name pricing__service-name_hidden">
+									<span>+</span> Responsive
+								</div>
+								<span class="block price">
+									<span>₦</span>35000
+								</span>
+							</div>
+							<div class="pricing__integration">
+								<div class="integration-name pricing__service-name_hidden">
+									<span>+</span> <span>Sofrware Integration</span>  
+								</div>
+								<div class="integration-price">
+									<span>₦</span>30000
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services-item__bottom">
+						<div id="js-additional-email" class="services-item__additional">
+							Additional options 
+							<i class="fas fa-arrow-right"></i>
+						</div>
+						<div id="order-email-btn"  class="button services-item__button">
+							Start a project
+						</div>
+					</div>
+				</div>
+	
+				<div class="services-item services-item_spa">
+					<div class="services-item__heading">
+						<i class="service__icon icon-app"></i>
+						<h3>
+							PSD to App
+						</h3>
+					</div>
+					<ul class="services-item__content">
+						<li>
+							• ReactJS Development
+						</li>
+						<li>
+							• AngularJS Development
+						</li>
+						<li>
+							• Responsive Email Templates
+						</li>
+						<li>
+							• Email Software Integration
+						</li>
+					</ul>	
+					<div class="services-item__bottom">
+						<div class="services-item__message">
+							Call Us For More Details At 09090887847
+						</div>
+						<a href="get_a_quote.html" class="button services-item__button">
+							Get a quote
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="close newproject-close pointer">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+	
+		<!-- Newproject Order -->
+		<div class="newproject-order">
+			<div class="newproject-order__icon"></div>
+			<div class="newproject-order__block">
+				<div class="newproject-order__calculate">
+					<div class="order__form">
+						<div class="order__form-title">
+							Calculate your order cost:
+						</div>
+						<div class="order__form-pages">
+							<div class="form-section-title">
+								Number of pages:
+							</div>
+							<div class="form-pages-incrementor">
+								<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+								<input type="number" min="1" max="100" value="1" name="num_pages" id="field-pages" class="incrementor-field">
+								<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+							</div>
+							<div class="order__form-notice">
+								1 Homepage + <span class="innerpages-num">0</span> inner pages
+							</div>
+						</div>
+						<div class="order__form-compatibility">
+							<div class="form-section-title">
+								Compatibility:
+							</div>
+							<ul class="form-compatibility-list">
+								<li class="checkbox-compatibility">
+									<input type="checkbox" name="compatibility" id="field-compatibility-desktop" class="field-compatibility" value="desktop" disabled="disabled" checked="checked">
+									<label for="field-compatibility-desktop" class="checkbox-compatibility__label checkbox-compatibility__label_desktop">
+										<span class="checkbox-compatibility__head">
+											Desktop
+											<i class="fas fa-check"></i>
+										</span>
+										<i class="checkbox-compatibility__icon checkbox-compatibility__icon_desktop"></i>
+										<span class="checkbox-compatibility__bottom"></span>
+									</label>
+								</li>
+	
+								<li class="checkbox-compatibility">
+									<input type="checkbox" name="compatibility" id="field-compatibility-tablet" class="field-compatibility" value=", tablet">
+									<label for="field-compatibility-tablet" class="checkbox-compatibility__label checkbox-compatibility__label_tablet">
+										<span class="checkbox-compatibility__head">
+											Tablet
+											<i class="fas fa-check"></i>
+										</span>
+										<i class="checkbox-compatibility__icon checkbox-compatibility__icon_tablet"></i>
+										<span class="checkbox-compatibility__bottom">
+											+ <span>₦</span> 15000
+										</span>
+									</label>
+								</li>
+	
+								<li class="checkbox-compatibility">
+									<input type="checkbox" name="compatibility" id="field-compatibility-phone" class="field-compatibility" value=", phone">
+									<label for="field-compatibility-phone" class="checkbox-compatibility__label checkbox-compatibility__label_phone">
+										<span class="checkbox-compatibility__head">
+											Phone
+											<i class="fas fa-check"></i>
+										</span>
+										<i class="checkbox-compatibility__icon checkbox-compatibility__icon_phone"></i>
+										<span class="checkbox-compatibility__bottom">
+											+ <span>₦</span> 35000
+										</span>
+									</label>
+								</li>
+							</ul>
+							<div class="order__form-notice">
+								Fully compatible with <span class="compatibility-notice"><span>desktop</span></span> browsers and devices.
+							</div>
+						</div>
+						<div class="order__form-turnaround">
+							<div class="form-section-title">
+								Turnaround Time:
+							</div>
+							<ul class="form-turnaround-list">
+								<li class="radio-turnaround">
+									<input type="radio" name="turnaround" id="field-turnaround-standard" value="standard" checked="checked">
+									<label for="field-turnaround-standard" class="radio-turnaround__label">
+										Standard Turnaround
+									</label>
+								</li>
+								<li class="radio-turnaround">
+									<input type="radio" name="turnaround" id="field-turnaround-express" value="express">
+									<label for="field-turnaround-express" class="radio-turnaround__label">
+										Express Turnaround
+									</label>
+								</li>
+							</ul>
+							<div class="order__form-notice">
+								Usually <span class="turnaround-notice">Standard</span> Turnaround takes <span class="days-notice">7</span> business days for <span class="pages-notice-summary">1</span>pages.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="newproject-order__review">
+					<div class="order__summary">
+						<div class="order__summary-head">
+							Review your order
+						</div>
+						<div class="order__summary-body">
+							<div class="order__summary-body-info">
+								<div class="order__summary-body-section">
+									<div class="order__summary-body-section-title">
+										Service:
+									</div>
+									<div class="order__summary-body-section-info">
+										<span class="service-notice">Front-end</span> development
+									</div>
+								</div>
+								<div class="order__summary-body-section">
+									<div class="order__summary-body-section-title">
+										Number of pages:
+									</div>
+									<div class="order__summary-body-section-info">
+										<span class="pages-notice-summary">1</span> pages
+									</div>
+								</div>
+								<div class="order__summary-body-section">
+									<div class="order__summary-body-section-title">
+										Compatibility:
+									</div>
+									<div class="order__summary-body-section-info">
+										<span class="compatibility-notice"><span>desktop</span></span>
+									</div>
+								</div>
+								<div class="order__summary-body-section">
+									<div class="order__summary-body-section-title">
+										Turnaround:
+									</div>
+									<div class="order__summary-body-section-info">
+										<span class="turnaround-notice">Standard</span> - <span class="days-notice">7</span> <span>b. days</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="order__summary-body-price">
+							<div class="order__summary-body-price-title">
+								Price breakdown
+							</div>
+							<div class="order__summary-body-price-data">
+								<div class="order__summary-body-price-section">
+									<div class="order__summary-body-price-name">
+										Homepage
+									</div>
+									<div class="order__summary-body-price-info">
+										1 x
+										<span>
+											<span>
+											 	₦
+											</span>
+											<span class="homepage-price">
+											 	35000
+											</span>
+										</span>
+									</div>
+								</div>
+								<div class="order__summary-body-price-section">
+									<div class="order__summary-body-price-name">
+										<span class="innerpages-num">0</span> Inner Pages
+									</div>
+									<div class="order__summary-body-price-info">
+										<span class="innerpages-num">0</span> x
+										<span>
+											<span>
+											 	₦
+											</span>
+											<span class="innerpages-price">
+											 	10000
+											</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="order__summary-bottom">
+							<div class="order__summary-bottom-info">
+								<span>
+									Total:
+								</span>
+								<span>
+									<span>
+										₦
+									</span>
+									<span id="total">
+										85000
+									</span>
+								</span>
+							</div>
+							<div class="order__summary-bottom-message">
+								* No upfront payment is required.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="newproject-order__buttons">
+				<div class="newproject-order__button newproject-order__button_back">
+					Back
+				</div>
+				<div class="newproject-order__button newproject-order__button_add">
+					Add
+				</div>
+			</div>
+			<div class="newproject-close newproject-order__button_back pointer">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+	
+		<!-- Newproject Confirmation -->
+		<div class="newproject-confirmation">
+			<div class="newproject-confirmation__icon"></div>
+			<div class="newproject-confirmation__message">
+				<div>
+					Thank you!
+				</div>
+				<div>
+					Your project HAS BEEN successfully added
+				</div>
+			</div>
+			<div class="newproject-order__button newproject-confirmation__btn">
+				Close
+			</div>
+			<div class="close newproject-close pointer">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- Modal Boxes-->
+	<div style="display: none;">
+	    <div class="box-modal" id="additional-html">
+	        <div class="box-modal_close arcticmodal-close">
+	        	<i class="fas fa-times"></i>
+	        </div>
+	        <div class="additional-info">
+	        	<div class="additional-info__heading">
+	        		<div>
+	        			Psd to html
+	        		</div>
+	        		<h3>
+	        			Additional options
+	        		</h3>
+	        	</div>
+	        	<div class="additional-info__body">
+	        		<div class="additional-info__body-section additional-info__body-section_halfwidth">
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Popular
+	        				</div>
+	        				<ul class="additional-info__list">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Retina display ready
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							14826
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (No)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (Twitter Bootstrap)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (Zurb Foundation)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Print version CSS
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Fonts( @font-face, google.com,  typekit.com, fonts.com)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Markup
+	        				</div>
+	        				<ul class="additional-info__list">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Footer at bottom
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							14826
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Dynamic Drop Down Menus (No)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Dynamic Drop Down Menus (Yes)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        		</div>
+	        		<div class="additional-info__body-section additional-info__body-section_fullwidth">
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Scripts
+	        				</div>
+	        				<ul class="additional-info__list additional-info__list_fullwidth">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Burger menu
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Accordion / Open/close
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Carousel
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7060
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Lightbox
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							19062
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Tabs
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7060
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Popup
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							19062
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div style="display: none;">
+	    <div class="box-modal" id="additional-wordpress">
+	        <div class="box-modal_close arcticmodal-close">
+	        	<i class="fas fa-times"></i>
+	        </div>
+	        <div class="additional-info">
+	        	<div class="additional-info__heading">
+	        		<div>
+	        			Psd to wordpress
+	        		</div>
+	        		<h3>
+	        			Additional options
+	        		</h3>
+	        	</div>
+	        	<div class="additional-info__body">
+	        		<div class="additional-info__body-section additional-info__body-section_halfwidth">
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Popular
+	        				</div>
+	        				<ul class="additional-info__list">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Retina display ready
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							14826
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (No)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (Twitter Bootstrap)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (Zurb Foundation)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Print version CSS
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Fonts( @font-face, google.com,  typekit.com, fonts.com)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Markup
+	        				</div>
+	        				<ul class="additional-info__list">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Footer at bottom
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							14826
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Dynamic Drop Down Menus (No)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Dynamic Drop Down Menus (Yes)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        		</div>
+	        		<div class="additional-info__body-section additional-info__body-section_fullwidth">
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Scripts
+	        				</div>
+	        				<ul class="additional-info__list additional-info__list_fullwidth">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Burger menu
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Accordion / Open/close
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Carousel
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7060
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Lightbox
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							19062
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Tabs
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7060
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Popup
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							19062
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div style="display: none;">
+	    <div class="box-modal" id="additional-shopify">
+	        <div class="box-modal_close arcticmodal-close">
+	        	<i class="fas fa-times"></i>
+	        </div>
+	        <div class="additional-info">
+	        	<div class="additional-info__heading">
+	        		<div>
+	        			Psd to shopify
+	        		</div>
+	        		<h3>
+	        			Additional options
+	        		</h3>
+	        	</div>
+	        	<div class="additional-info__body">
+	        		<div class="additional-info__body-section additional-info__body-section_halfwidth">
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Popular
+	        				</div>
+	        				<ul class="additional-info__list">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Retina display ready
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							14826
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (No)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (Twitter Bootstrap)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (Zurb Foundation)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Print version CSS
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Fonts( @font-face, google.com,  typekit.com, fonts.com)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Markup
+	        				</div>
+	        				<ul class="additional-info__list">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Footer at bottom
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							14826
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Dynamic Drop Down Menus (No)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Dynamic Drop Down Menus (Yes)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        		</div>
+	        		<div class="additional-info__body-section additional-info__body-section_fullwidth">
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Scripts
+	        				</div>
+	        				<ul class="additional-info__list additional-info__list_fullwidth">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Burger menu
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Accordion / Open/close
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Carousel
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7060
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Lightbox
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							19062
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Tabs
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7060
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Popup
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							19062
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div style="display: none;">
+	    <div class="box-modal" id="additional-joomla">
+	        <div class="box-modal_close arcticmodal-close">
+	        	<i class="fas fa-times"></i>
+	        </div>
+	        <div class="additional-info">
+	        	<div class="additional-info__heading">
+	        		<div>
+	        			Psd to joomla
+	        		</div>
+	        		<h3>
+	        			Additional options
+	        		</h3>
+	        	</div>
+	        	<div class="additional-info__body">
+	        		<div class="additional-info__body-section additional-info__body-section_halfwidth">
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Popular
+	        				</div>
+	        				<ul class="additional-info__list">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Retina display ready
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							14826
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (No)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (Twitter Bootstrap)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (Zurb Foundation)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Print version CSS
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Fonts( @font-face, google.com,  typekit.com, fonts.com)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Markup
+	        				</div>
+	        				<ul class="additional-info__list">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Footer at bottom
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							14826
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Dynamic Drop Down Menus (No)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Dynamic Drop Down Menus (Yes)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        		</div>
+	        		<div class="additional-info__body-section additional-info__body-section_fullwidth">
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Scripts
+	        				</div>
+	        				<ul class="additional-info__list additional-info__list_fullwidth">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Burger menu
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Accordion / Open/close
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Carousel
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7060
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Lightbox
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							19062
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Tabs
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7060
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Popup
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							19062
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div style="display: none;">
+	    <div class="box-modal" id="additional-magento">
+	        <div class="box-modal_close arcticmodal-close">
+	        	<i class="fas fa-times"></i>
+	        </div>
+	        <div class="additional-info">
+	        	<div class="additional-info__heading">
+	        		<div>
+	        			Psd to magento
+	        		</div>
+	        		<h3>
+	        			Additional options
+	        		</h3>
+	        	</div>
+	        	<div class="additional-info__body">
+	        		<div class="additional-info__body-section additional-info__body-section_halfwidth">
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Popular
+	        				</div>
+	        				<ul class="additional-info__list">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Retina display ready
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							14826
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (No)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (Twitter Bootstrap)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (Zurb Foundation)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Print version CSS
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Fonts( @font-face, google.com,  typekit.com, fonts.com)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Markup
+	        				</div>
+	        				<ul class="additional-info__list">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Footer at bottom
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							14826
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Dynamic Drop Down Menus (No)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Dynamic Drop Down Menus (Yes)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        		</div>
+	        		<div class="additional-info__body-section additional-info__body-section_fullwidth">
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Scripts
+	        				</div>
+	        				<ul class="additional-info__list additional-info__list_fullwidth">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Burger menu
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Accordion / Open/close
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Carousel
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7060
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Lightbox
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							19062
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Tabs
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7060
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Popup
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							19062
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div style="display: none;">
+	    <div class="box-modal" id="additional-woocommerce">
+	        <div class="box-modal_close arcticmodal-close">
+	        	<i class="fas fa-times"></i>
+	        </div>
+	        <div class="additional-info">
+	        	<div class="additional-info__heading">
+	        		<div>
+	        			Psd to woocommerce
+	        		</div>
+	        		<h3>
+	        			Additional options
+	        		</h3>
+	        	</div>
+	        	<div class="additional-info__body">
+	        		<div class="additional-info__body-section additional-info__body-section_halfwidth">
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Popular
+	        				</div>
+	        				<ul class="additional-info__list">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Retina display ready
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							14826
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (No)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (Twitter Bootstrap)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (Zurb Foundation)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Print version CSS
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Fonts( @font-face, google.com,  typekit.com, fonts.com)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Markup
+	        				</div>
+	        				<ul class="additional-info__list">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Footer at bottom
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							14826
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Dynamic Drop Down Menus (No)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Dynamic Drop Down Menus (Yes)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        		</div>
+	        		<div class="additional-info__body-section additional-info__body-section_fullwidth">
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Scripts
+	        				</div>
+	        				<ul class="additional-info__list additional-info__list_fullwidth">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Burger menu
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Accordion / Open/close
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Carousel
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7060
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Lightbox
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							19062
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Tabs
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7060
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Popup
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							19062
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div style="display: none;">
+	    <div class="box-modal" id="additional-email">
+	        <div class="box-modal_close arcticmodal-close">
+	        	<i class="fas fa-times"></i>
+	        </div>
+	        <div class="additional-info">
+	        	<div class="additional-info__heading">
+	        		<div>
+	        			Psd into email template
+	        		</div>
+	        		<h3>
+	        			Additional options
+	        		</h3>
+	        	</div>
+	        	<div class="additional-info__body">
+	        		<div class="additional-info__body-section additional-info__body-section_halfwidth">
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Popular
+	        				</div>
+	        				<ul class="additional-info__list">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Retina display ready
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							14826
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (No)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (Twitter Bootstrap)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							CSS Frameworks (Zurb Foundation)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Print version CSS
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Fonts( @font-face, google.com,  typekit.com, fonts.com)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Markup
+	        				</div>
+	        				<ul class="additional-info__list">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Footer at bottom
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							14826
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Dynamic Drop Down Menus (No)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Dynamic Drop Down Menus (Yes)
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7766
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        		</div>
+	        		<div class="additional-info__body-section additional-info__body-section_fullwidth">
+	        			<div class="additional-info__block">
+	        				<div class="additional-info__block-heading">
+	        					Scripts
+	        				</div>
+	        				<ul class="additional-info__list additional-info__list_fullwidth">
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Burger menu
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Accordion / Open/close
+	        						</div>
+	        						<div class="additional-info__price">
+	        							Free
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Carousel
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7060
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Lightbox
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							19062
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Tabs
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							7060
+	        						</div>
+	        					</li>
+	        					<li class="additional-info__item">
+	        						<div class="additional-info__name">
+	        							Popup
+	        						</div>
+	        						<div class="additional-info__price">
+	        							<span>₦</span>
+	        							19062
+	        						</div>
+	        					</li>
+	        				</ul>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+	    </div>
+	</div>
+	
+	<!-- Help Button -->
+	<a href="support.html" class="help-btn">
+		<div class="help-btn__ico">
+			?
+		</div>
+		<div class="help-btn__text">
+			help
+		</div>
+	</a>
+		<!-- loader -->
+	
+		<div id="loader">
+			<img src="img/ripple.svg" alt="">
+		</div>
+	
+		<!-- Page scroll up -->
+	
+		<div class="go-up hvr-bob" title="Up" id='ToTop'>					
+			<i class="fas fa-level-up-alt"></i>		
+		</div>
+	
+	
+		<!-- SCRIPTS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>	
+		<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>		
+		<script src="js/main.js"></script>	
+	</body>
+	</html>
